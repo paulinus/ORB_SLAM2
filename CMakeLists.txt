@@ -95,3 +95,10 @@ add_executable(mono_kitti
 Examples/Monocular/mono_kitti.cc)
 target_link_libraries(mono_kitti ${PROJECT_NAME})
 
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/OpenDroneMap)
+
+add_executable(mono_odm
+Examples/OpenDroneMap/mono_odm.cc)
+target_link_libraries(mono_odm ${PROJECT_NAME})
+
